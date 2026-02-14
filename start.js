@@ -11,7 +11,9 @@ module.exports = {
         env: { },                   // Edit this to customize environment variables (see documentation)
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
-          "python launch.py",    // Edit with your custom commands
+          "python -m pip install --upgrade --force-reinstall setuptools==69.5.1",
+          "python -m pip install f5-tts chatterbox-tts qwen-tts",
+          "python launch.py",
         ],
         on: [{
           // The regular expression pattern to monitor.
@@ -39,5 +41,6 @@ module.exports = {
     }
   ]
 }
+
 
 
